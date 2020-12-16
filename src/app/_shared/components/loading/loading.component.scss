@@ -26,6 +26,11 @@
     animation: shake 2.5s cubic-bezier(.36,.07,.19,.97) infinite;
 }
 
+.loading__text {
+    height: 30px;
+    margin-top: 20px;
+}
+
 .loading__pokeball::before,
 .loading__pokeball::after {
 content:"";
