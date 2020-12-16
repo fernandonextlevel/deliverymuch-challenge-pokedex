@@ -1,12 +1,16 @@
-import { TestBed } from '@angular/core/testing'
-
+import { inject, TestBed } from '@angular/core/testing'
 import { TemplateService } from './template-service'
 
 describe('TemplateService', () => {
-  beforeEach(() => TestBed.configureTestingModule({}))
+  beforeEach((async () => {
+    await TestBed.configureTestingModule({
+      providers: [
+        TemplateService
+      ]
+    })
+  }))
 
-  it('should be created', () => {
-    const service: TemplateService = TestBed.get(TemplateService)
-    expect(service).toBeTruthy()
-  })
+  it('should be created', inject([TemplateService], (service: TemplateService) => {
+    expect(service).toBeTruthy();
+  }));
 })
