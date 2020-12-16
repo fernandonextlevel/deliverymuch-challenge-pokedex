@@ -3,15 +3,22 @@
 ## Environment Dependencies (Before You Start)
 
 Download & Install [NodeJS](https://nodejs.org/) (v13+ Recommended).
-Then Install the [Angular CLI](https://github.com/angular/angular-cli) (Version 11.0.4+ Recommended), using the Node Package Manager: `npm install -g @angular/cli`
+
+Then, Install the [Angular CLI](https://github.com/angular/angular-cli) (Version 11.0.4+ Recommended), using the Node Package Manager: `npm install -g @angular/cli`
 
 ## Development server
 
-Navigate to the cloned folder (containing the package.json file), and run `npm install` to install the project's dependencies. Then, run `ng s -o` to launch the dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Navigate to the cloned folder (containing the package.json file), and run `npm install` to install the project's dependencies.
+
+Then, run `ng s -o` to launch the dev server. Navigate to `http://localhost:4200/`.
+
+The app will automatically reload if you change any of the source files.
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build. The environment files corresponding to both build scenarios are within folder `environments`.
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+
+The environment files corresponding to both build scenarios are within folder `environments`.
 
 ## Running unit tests
 
@@ -23,7 +30,9 @@ End-to-end tests will not be implemented for this project. The basic structure t
 
 ## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component (inside the folder you wish to create a new component). You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module` following the same process.
+Run `ng generate component component-name` to generate a new component (inside the folder you wish to create a new component).
+
+You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module` following the same process.
 
 ## Project documentation
 
