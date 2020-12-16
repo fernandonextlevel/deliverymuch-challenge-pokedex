@@ -1,17 +1,20 @@
+import { HttpClientTestingModule } from '@angular/common/http/testing'
 import { TestBed } from '@angular/core/testing'
 import { AppComponent } from './app.component'
+import { PokecontainerComponent } from './pokecontainer/pokecontainer.component'
 import { ServicesModule } from './_shared/modules/services.module'
-import { TemplateService } from './_shared/services/template-service/template-service'
 
 describe('AppComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [
-        AppComponent
-      ],
       imports: [
+        HttpClientTestingModule,
         ServicesModule
+      ],      
+      declarations: [
+        AppComponent,
+        PokecontainerComponent
       ]
     }).compileComponents()
   })

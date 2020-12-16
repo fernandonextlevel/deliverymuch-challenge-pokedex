@@ -1,6 +1,7 @@
 import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { LoadingComponent } from '../_shared/components/loading/loading.component';
 import { PokeAPIService } from '../_shared/services/pokeapi-service/pokeapi-service';
 import { TemplateService } from '../_shared/services/template-service/template-service';
 
@@ -17,7 +18,8 @@ describe('PokecontainerComponent', () => {
         BrowserAnimationsModule
       ],      
       declarations: [
-        PokecontainerComponent
+        PokecontainerComponent,
+        LoadingComponent
       ],
       providers: [
         TemplateService,
