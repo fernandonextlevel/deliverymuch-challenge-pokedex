@@ -1,0 +1,16 @@
+<div class="generations__menu">
+    <div
+        class="generations__menu__item"
+        
+        *ngFor="let pokemonGenerationMenuItem of pokemonGenerationMenuItems; index as i;"
+        [ngClass]="selectedMenuItem === pokemonGenerationMenuItem ? 'selected' : ''"
+    >
+        <button
+            class="menu__item__button"
+            [ngStyle]="{backgroundImage:getMenuItemBackground(pokemonGenerationMenuItem.name)}"
+            (click)="selectPokemonGeneration(pokemonGenerationMenuItem)"
+        >
+        </button>
+    </div>
+</div>
+

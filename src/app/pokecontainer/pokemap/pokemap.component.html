@@ -1,0 +1,48 @@
+<div
+    class="pokemap"
+    *ngIf="pokemonSpeciesList"
+    [ngStyle]="{background:getPokeMapBackground(selectedPokemonGeneration.main_region.name)}"
+    [@FadeTrigger]="Animate"
+>
+    <div class="widget pokemap__generationinfo">
+        <div class="widget__title">
+            Generation Info
+        </div>
+        <div class="widget__content">
+            <div class="pokemap__generationinfo__title">
+                <strong>Name: </strong>
+                {{pokemonGenerationInfo.enName}}
+            </div>
+            <div class="pokemap__generationinfo__region">
+                <strong>Main Region: </strong>
+                {{pokemonGenerationInfo.mainRegionName}}
+            </div>
+            <div class="pokemap__generationinfo__pokemonsAmount">
+                <strong>New Pokémons: </strong>
+                {{pokemonGenerationInfo.pokemonsAmount}}
+            </div>            
+        </div>
+    </div>
+    <div class="pokemap__bottom__wrapper">
+        <div class="widget pokemap__versionlist">
+            <div class="widget__title">
+                Games Released
+            </div>
+            <div class="widget__content">
+                <div class="versionlist__version" *ngFor="let gameVersion of pokemonVersionList; index as i;">
+                    <p>{{gameVersion.name}}</p>
+                </div>            
+            </div>            
+        </div>    
+        <div class="widget pokemap__pokelist">
+            <div class="widget__title">
+                Pokémon List
+            </div>
+            <div class="widget__content">
+                <div class="pokelist__species" *ngFor="let pokemonSpecies of pokemonSpeciesList; index as i;">
+                    <p>{{pokemonSpecies.name}}</p>
+                </div>            
+            </div>
+        </div>
+    </div>
+</div>

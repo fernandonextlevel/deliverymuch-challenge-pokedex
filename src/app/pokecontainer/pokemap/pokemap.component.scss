@@ -1,0 +1,62 @@
+.pokemap {
+    overflow: hidden;
+    height: 100vh;
+    padding: 20px;
+
+    .pokemap__generationinfo {
+        height: 200px;
+        width: 100%;
+        background: #3c2061cc;
+        border: 2px solid #220e3dcc;
+        border-radius: 4px;
+    }
+
+    .pokemap__bottom__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .pokemap__versionlist {
+        height: 500px;
+        width: 400px;
+        margin: 20px 20px 0 0;
+        background: #4e1f26cc;
+        border: 2px solid #421018cc;
+        border-radius: 4px;
+    } 
+    
+    .pokemap__pokelist {
+        height: 500px;
+        width: calc(100% - 420px);
+        margin-top: 20px;
+        background: #1f185fdd;
+        border: 2px solid #110c3d;
+        border-radius: 4px;
+    }
+}
+
+.widget {
+    font-size: 16px;
+    
+    .widget__title, .widget__content {
+        padding: 5px 20px;
+    }
+
+    .widget__title {
+        background: #f2f2f2;
+        font-size: 20px;
+        font-weight: 700;
+        color: #000;
+        text-shadow: 2px 8px 6px rgba(0,0,0,0.2), 0px -5px 35px rgba(255,255,255,0.3);
+    }
+
+    .widget__content {
+        overflow-y: auto;
+        height: calc(100% - 40px);
+        color: #fff;
+    }
+
+    > * {
+        text-transform: capitalize
+    }
+}

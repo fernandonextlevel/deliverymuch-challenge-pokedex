@@ -1,0 +1,36 @@
+.generations__menu {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    padding: 0 24px;
+
+    .generations__menu__item {
+        height: 100%;
+        width: 80px;
+        transition: height 1s, margin 1s;
+        outline: 4px solid #000;
+        
+
+        &.selected {
+            outline: 4px solid #fff;
+            box-shadow: 5px 5px 8px 5px rgba(0, 0, 0, 1);
+        }
+
+        &:hover {
+            height: 390px;
+            margin-top: -260px;
+        }
+
+        .menu__item__button {
+            cursor: pointer;
+            height: 100%;
+            width: 100%;
+            padding: 10px 0;
+
+            &:focus {
+
+            }          
+        }
+    }
+}

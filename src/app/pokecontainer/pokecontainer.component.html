@@ -1,0 +1,15 @@
+<pokedex-loading *ngIf="isLoading" [@FadeTrigger]="Animate"></pokedex-loading>
+<div class="pokecontainer">
+    <pokedex-sidemenu
+        *ngIf="!isLoading"
+        [@FadeTrigger]="Animate"
+        [pokemonGenerationMenuItems]="pokemonGenerationMenuItems"
+        (loadPokemonGeneration)="loadPokemonGeneration($event)"
+        class="sideMenu"
+    >
+    </pokedex-sidemenu>
+    <section class="container pageBackground">
+        <ng-container #content></ng-container>
+    </section>    
+</div>
+
