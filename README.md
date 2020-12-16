@@ -1,6 +1,6 @@
 # Delivery Much Challenge - Pokedex
 
-## Environment Dependencies (Before You STart)
+## Environment Dependencies (Before You Start)
 
 Download & Install [NodeJS](https://nodejs.org/) (v13+ Recommended).
 Then Install the [Angular CLI](https://github.com/angular/angular-cli) (Version 11.0.4+ Recommended), using the Node Package Manager: `npm install -g @angular/cli`
