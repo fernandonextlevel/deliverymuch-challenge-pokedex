@@ -1,0 +1,747 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>deliverymuch-pokedex documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">deliverymuch-pokedex documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>PokemapComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/pokecontainer/pokemap/pokemap.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>pokedex-pokemap</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./pokemap.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./pokemap.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#Animate">Animate</a>
+                            </li>
+                            <li>
+                                <a href="#pokemonGenerationInfo">pokemonGenerationInfo</a>
+                            </li>
+                            <li>
+                                <a href="#pokemonSpeciesList">pokemonSpeciesList</a>
+                            </li>
+                            <li>
+                                <a href="#pokemonVersionList">pokemonVersionList</a>
+                            </li>
+                            <li>
+                                <a href="#selectedPokemonGeneration">selectedPokemonGeneration</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#getPokeMapBackground">getPokeMapBackground</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor()</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">src/app/pokecontainer/pokemap/pokemap.component.ts:32</a></div>
+                            </td>
+                        </tr>
+
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getPokeMapBackground"></a>
+                    <span class="name">
+                        <b>
+                            getPokeMapBackground
+                        </b>
+                        <a href="#getPokeMapBackground"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getPokeMapBackground(name: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="52"
+                            class="link-to-prism">src/app/pokecontainer/pokemap/pokemap.component.ts:52</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>name</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
+                            ngOnInit
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="40"
+                            class="link-to-prism">src/app/pokecontainer/pokemap/pokemap.component.ts:40</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="Animate"></a>
+                        <span class="name">
+                            <b>
+                            Animate</b>
+                            <a href="#Animate"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/app/pokecontainer/pokemap/pokemap.component.ts:28</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="pokemonGenerationInfo"></a>
+                        <span class="name">
+                            <b>
+                            pokemonGenerationInfo</b>
+                            <a href="#pokemonGenerationInfo"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/GenerationInfo.html" target="_self" >GenerationInfo</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="30" class="link-to-prism">src/app/pokecontainer/pokemap/pokemap.component.ts:30</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="pokemonSpeciesList"></a>
+                        <span class="name">
+                            <b>
+                            pokemonSpeciesList</b>
+                            <a href="#pokemonSpeciesList"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/PokemonSpecies.html" target="_self" >PokemonSpecies[]</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">src/app/pokecontainer/pokemap/pokemap.component.ts:32</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="pokemonVersionList"></a>
+                        <span class="name">
+                            <b>
+                            pokemonVersionList</b>
+                            <a href="#pokemonVersionList"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/GenerationVersionGroup.html" target="_self" >GenerationVersionGroup[]</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">src/app/pokecontainer/pokemap/pokemap.component.ts:31</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="selectedPokemonGeneration"></a>
+                        <span class="name">
+                            <b>
+                            selectedPokemonGeneration</b>
+                            <a href="#selectedPokemonGeneration"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/PokemonGeneration.html" target="_self" >PokemonGeneration</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="29" class="link-to-prism">src/app/pokecontainer/pokemap/pokemap.component.ts:29</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;
+import { trigger, transition, style, animate } from &#x27;@angular/animations&#x27;
+
+//Interfaces
+import { GenerationInfo, GenerationVersionGroup, PokemonGeneration, PokemonSpecies } from &#x27;src/app/_shared/services/pokeapi-service/interfaces/pokemon-generation.interface&#x27;
+
+@Component({
+	selector: &#x27;pokedex-pokemap&#x27;,
+	templateUrl: &#x27;./pokemap.component.html&#x27;,
+	styleUrls: [&#x27;./pokemap.component.scss&#x27;],
+	animations: [
+		trigger(&#x27;FadeTrigger&#x27;, [
+			transition(&#x27;void &#x3D;&gt; *&#x27;, [
+				style({ opacity: 0 }),
+				animate(&quot;1s ease-in&quot;, style({ opacity: 1 }))
+			]),
+			transition(&#x27;* &#x3D;&gt; void&#x27;, [
+				style({ opacity: 1 }),
+				animate(&quot;1s ease-out&quot;, style({ opacity: 0 }))
+			])
+		])
+	]
+})
+
+export class PokemapComponent implements OnInit {
+
+	Animate: any
+	selectedPokemonGeneration!: PokemonGeneration
+	pokemonGenerationInfo!: GenerationInfo
+	pokemonVersionList!: GenerationVersionGroup[]
+	pokemonSpeciesList!: PokemonSpecies[]
+
+	constructor(
+
+	) {
+
+	}
+
+	ngOnInit(): void {
+		this.pokemonGenerationInfo &#x3D; {
+			enName: this.selectedPokemonGeneration.names.filter((generationNameByLang) &#x3D;&gt; {
+				return generationNameByLang.language.name &#x3D;&#x3D;&#x3D; &#x27;en&#x27;
+			})[0].name,
+			mainRegionName: this.selectedPokemonGeneration.main_region.name,
+			pokemonsAmount: this.selectedPokemonGeneration.pokemon_species.length
+		}
+		this.pokemonVersionList &#x3D; this.selectedPokemonGeneration.version_groups;
+		this.pokemonSpeciesList &#x3D; this.selectedPokemonGeneration.pokemon_species.sort((a, b) &#x3D;&gt; (a.name &gt; b.name) ? 1 : -1);
+	}
+
+	getPokeMapBackground(name: string) {
+		return &#x60;rgba(255,255,255,0.5) url(&#x27;../../../assets/images/region-backgrounds/${name}.png&#x27;) center center / cover no-repeat&#x60;
+	}
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div
+    class&#x3D;&quot;pokemap&quot;
+    *ngIf&#x3D;&quot;pokemonSpeciesList&quot;
+    [ngStyle]&#x3D;&quot;{background:getPokeMapBackground(selectedPokemonGeneration.main_region.name)}&quot;
+    [@FadeTrigger]&#x3D;&quot;Animate&quot;
+&gt;
+    &lt;div class&#x3D;&quot;widget pokemap__generationinfo&quot;&gt;
+        &lt;div class&#x3D;&quot;widget__title&quot;&gt;
+            Generation Info
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;widget__content&quot;&gt;
+            &lt;div class&#x3D;&quot;pokemap__generationinfo__title&quot;&gt;
+                &lt;strong&gt;Name: &lt;/strong&gt;
+                {{pokemonGenerationInfo.enName}}
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;pokemap__generationinfo__region&quot;&gt;
+                &lt;strong&gt;Main Region: &lt;/strong&gt;
+                {{pokemonGenerationInfo.mainRegionName}}
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;pokemap__generationinfo__pokemonsAmount&quot;&gt;
+                &lt;strong&gt;New Pokémons: &lt;/strong&gt;
+                {{pokemonGenerationInfo.pokemonsAmount}}
+            &lt;/div&gt;            
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;pokemap__bottom__wrapper&quot;&gt;
+        &lt;div class&#x3D;&quot;widget pokemap__versionlist&quot;&gt;
+            &lt;div class&#x3D;&quot;widget__title&quot;&gt;
+                Games Released
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;widget__content&quot;&gt;
+                &lt;div class&#x3D;&quot;versionlist__version&quot; *ngFor&#x3D;&quot;let gameVersion of pokemonVersionList; index as i;&quot;&gt;
+                    &lt;p&gt;{{gameVersion.name}}&lt;/p&gt;
+                &lt;/div&gt;            
+            &lt;/div&gt;            
+        &lt;/div&gt;    
+        &lt;div class&#x3D;&quot;widget pokemap__pokelist&quot;&gt;
+            &lt;div class&#x3D;&quot;widget__title&quot;&gt;
+                Pokémon List
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;widget__content&quot;&gt;
+                &lt;div class&#x3D;&quot;pokelist__species&quot; *ngFor&#x3D;&quot;let pokemonSpecies of pokemonSpeciesList; index as i;&quot;&gt;
+                    &lt;p&gt;{{pokemonSpecies.name}}&lt;/p&gt;
+                &lt;/div&gt;            
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./pokemap.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">.pokemap {
+    overflow: hidden;
+    height: 100vh;
+    padding: 144px 20px 20px 20px;
+
+    .pokemap__generationinfo {
+        height: 200px;
+        width: 100%;
+        background: #3c2061cc;
+        border: 2px solid #220e3dcc;
+        border-radius: 4px;
+    }
+
+    .pokemap__bottom__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .pokemap__versionlist {
+        height: calc(100vh - 384px);
+        width: 35%;
+        margin: 20px 20px 0 0;
+        background: #4e1f26cc;
+        border: 2px solid #421018cc;
+        border-radius: 4px;
+    } 
+    
+    .pokemap__pokelist {
+        height: calc(100vh - 384px);
+        width: 65%;
+        margin-top: 20px;
+        background: #1f185fdd;
+        border: 2px solid #110c3d;
+        border-radius: 4px;
+    }
+}
+
+.widget {
+    font-size: 16px;
+    
+    .widget__title, .widget__content {
+        padding: 5px 20px;
+    }
+
+    .widget__title {
+        background: #f2f2f2;
+        font-size: 20px;
+        font-weight: 700;
+        color: #000;
+        text-shadow: 2px 8px 6px rgba(0,0,0,0.2), 0px -5px 35px rgba(255,255,255,0.3);
+    }
+
+    .widget__content {
+        overflow-y: auto;
+        height: calc(100% - 40px);
+        color: #fff;
+    }
+
+    &gt; * {
+        text-transform: capitalize
+    }
+}
+
+@media (max-width: 768px) {
+    .pokemap {
+        height: auto;
+
+        .pokemap__bottom__wrapper {
+            flex-direction: column;
+        }
+
+        .pokemap__versionlist, .pokemap__pokelist {
+            width: 100%;
+        }
+    }
+}</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div    class="pokemap"    *ngIf="pokemonSpeciesList"    [ngStyle]="{background:getPokeMapBackground(selectedPokemonGeneration.main_region.name)}"    [@FadeTrigger]="Animate">    <div class="widget pokemap__generationinfo">        <div class="widget__title">            Generation Info        </div>        <div class="widget__content">            <div class="pokemap__generationinfo__title">                <strong>Name: </strong>                {{pokemonGenerationInfo.enName}}            </div>            <div class="pokemap__generationinfo__region">                <strong>Main Region: </strong>                {{pokemonGenerationInfo.mainRegionName}}            </div>            <div class="pokemap__generationinfo__pokemonsAmount">                <strong>New Pokémons: </strong>                {{pokemonGenerationInfo.pokemonsAmount}}            </div>                    </div>    </div>    <div class="pokemap__bottom__wrapper">        <div class="widget pokemap__versionlist">            <div class="widget__title">                Games Released            </div>            <div class="widget__content">                <div class="versionlist__version" *ngFor="let gameVersion of pokemonVersionList; index as i;">                    <p>{{gameVersion.name}}</p>                </div>                        </div>                    </div>            <div class="widget pokemap__pokelist">            <div class="widget__title">                Pokémon List            </div>            <div class="widget__content">                <div class="pokelist__species" *ngFor="let pokemonSpecies of pokemonSpeciesList; index as i;">                    <p>{{pokemonSpecies.name}}</p>                </div>                        </div>        </div>    </div></div></div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'pokedex-root'},{'name': 'LoadingComponent', 'selector': 'pokedex-loading'},{'name': 'PokecontainerComponent', 'selector': 'pokedex-pokecontainer'},{'name': 'PokemapComponent', 'selector': 'pokedex-pokemap'},{'name': 'SidemenuComponent', 'selector': 'pokedex-sidemenu'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'PokemapComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'PokemapComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

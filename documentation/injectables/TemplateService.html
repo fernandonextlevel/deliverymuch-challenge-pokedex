@@ -1,0 +1,817 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>deliverymuch-pokedex documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">deliverymuch-pokedex documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content injectable">
+                   <div class="content-data">
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>Injectables</li>
+  <li>TemplateService</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/app/_shared/services/template-service/template-service.ts</code>
+        </p>
+
+
+
+
+            <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#factoryResolver">factoryResolver</a>
+                            </li>
+                            <li>
+                                <a href="#rootViewContainer">rootViewContainer</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#calculateColors">calculateColors</a>
+                            </li>
+                            <li>
+                                <a href="#loadTemplate">loadTemplate</a>
+                            </li>
+                            <li>
+                                <a href="#setRootViewContainerRef">setRootViewContainerRef</a>
+                            </li>
+                            <li>
+                                <a href="#setThemeColors">setThemeColors</a>
+                            </li>
+                            <li>
+                                <a href="#setThemeElements">setThemeElements</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+            <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(factoryResolver: <a href="https://angular.io/api/core/ComponentFactoryResolver" target="_blank">ComponentFactoryResolver</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/app/_shared/services/template-service/template-service.ts:14</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>factoryResolver</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/core/ComponentFactoryResolver" target="_blank" >ComponentFactoryResolver</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+            <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="calculateColors"></a>
+                    <span class="name">
+                        <b>
+                            calculateColors
+                        </b>
+                        <a href="#calculateColors"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>calculateColors(color: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="37"
+                            class="link-to-prism">src/app/_shared/services/template-service/template-service.ts:37</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>color</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/ThemeColors.html" target="_self" >ThemeColors</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="loadTemplate"></a>
+                    <span class="name">
+                        <b>
+                            loadTemplate
+                        </b>
+                        <a href="#loadTemplate"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>loadTemplate(template: <a href="../components/PokemapComponent.html">Type<PokemapComponent></a>, selectedPokemonGeneration: <a href="../interfaces/PokemonGeneration.html">PokemonGeneration</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="27"
+                            class="link-to-prism">src/app/_shared/services/template-service/template-service.ts:27</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>template</td>
+                                    <td>
+                                                <code><a href="../components/PokemapComponent.html" target="_self" >Type&lt;PokemapComponent&gt;</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>selectedPokemonGeneration</td>
+                                    <td>
+                                                <code><a href="../interfaces/PokemonGeneration.html" target="_self" >PokemonGeneration</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setRootViewContainerRef"></a>
+                    <span class="name">
+                        <b>
+                            setRootViewContainerRef
+                        </b>
+                        <a href="#setRootViewContainerRef"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>setRootViewContainerRef(viewContainerRef: <a href="https://angular.io/api/core/ViewContainerRef" target="_blank">ViewContainerRef</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="23"
+                            class="link-to-prism">src/app/_shared/services/template-service/template-service.ts:23</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>viewContainerRef</td>
+                                    <td>
+                                                <code><a href="https://angular.io/api/core/ViewContainerRef" target="_blank" >ViewContainerRef</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setThemeColors"></a>
+                    <span class="name">
+                        <b>
+                            setThemeColors
+                        </b>
+                        <a href="#setThemeColors"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>setThemeColors(elements: <a href="../interfaces/ThemeElement.html">ThemeElement[]</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="121"
+                            class="link-to-prism">src/app/_shared/services/template-service/template-service.ts:121</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>elements</td>
+                                    <td>
+                                                <code><a href="../interfaces/ThemeElement.html" target="_self" >ThemeElement[]</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setThemeElements"></a>
+                    <span class="name">
+                        <b>
+                            setThemeElements
+                        </b>
+                        <a href="#setThemeElements"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>setThemeElements(colors: <a href="../interfaces/ThemeColors.html">ThemeColors</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="84"
+                            class="link-to-prism">src/app/_shared/services/template-service/template-service.ts:84</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>colors</td>
+                                    <td>
+                                                <code><a href="../interfaces/ThemeColors.html" target="_self" >ThemeColors</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+            <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="factoryResolver"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            factoryResolver</b>
+                            <a href="#factoryResolver"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://angular.io/api/core/ComponentFactoryResolver" target="_blank" >ComponentFactoryResolver</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <b>Decorators : </b>
+                            <br />
+                            <code>
+                                @Inject(ComponentFactoryResolver)<br />
+                            </code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/app/_shared/services/template-service/template-service.ts:18</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="rootViewContainer"></a>
+                        <span class="name">
+                            <b>
+                            rootViewContainer</b>
+                            <a href="#rootViewContainer"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/app/_shared/services/template-service/template-service.ts:14</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { ComponentFactoryResolver, Injectable, Inject, ViewContainerRef, Component, Type, ComponentRef } from &#x27;@angular/core&#x27;
+
+//Interfaces
+import { ThemeElement, ThemeColors } from &#x27;./interfaces/theme.interface&#x27;
+import { PokemonGeneration } from &#x27;../pokeapi-service/interfaces/pokemon-generation.interface&#x27;
+
+//Components
+import { PokemapComponent } from &#x27;src/app/pokecontainer/pokemap/pokemap.component&#x27;
+
+@Injectable()
+export class TemplateService {
+
+	rootViewContainer: any
+
+	constructor (
+		@Inject (ComponentFactoryResolver)
+		public factoryResolver: ComponentFactoryResolver
+	) {
+
+	}
+
+	setRootViewContainerRef(viewContainerRef: ViewContainerRef): void {
+		this.rootViewContainer &#x3D; viewContainerRef
+	}
+
+	loadTemplate(template: Type&lt;PokemapComponent&gt;, selectedPokemonGeneration: PokemonGeneration) {
+		this.rootViewContainer.clear()
+		const component: ComponentRef&lt;PokemapComponent&gt; &#x3D; this.factoryResolver
+						.resolveComponentFactory(template)
+						.create(this.rootViewContainer.parentInjector)
+		component.instance.selectedPokemonGeneration &#x3D; selectedPokemonGeneration
+		this.rootViewContainer.insert(component.hostView)
+		window.scrollTo(0, 0)
+	}
+
+	calculateColors(color: string): ThemeColors {
+		const result: RegExpExecArray | null &#x3D; /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(color)
+		if (result) {
+			let r &#x3D; parseInt(result[1], 16)
+			let g &#x3D; parseInt(result[2], 16)
+			let b &#x3D; parseInt(result[3], 16)
+			r /&#x3D; 255, g /&#x3D; 255, b /&#x3D; 255
+			const max &#x3D; Math.max(r, g, b), min &#x3D; Math.min(r, g, b)
+			let h, s, l &#x3D; (max + min) / 2
+			if (max &#x3D;&#x3D;&#x3D; min) {
+				h &#x3D; s &#x3D; 0
+			} else {
+				let d &#x3D; max - min
+				s &#x3D; l &gt; 0.5 ? d / (2 - max - min) : d / (max + min)
+				switch(max) {
+					case r: h &#x3D; (g - b) / d + (g &lt; b ? 6 : 0)
+						break
+					case g: h &#x3D; (b - r) / d + 2
+						break
+					case b: h &#x3D; (r - g) / d + 4
+						break
+				}
+				h ? h /&#x3D; 6 : 0
+			}
+			const H &#x3D; Number.parseInt((h ? h : 0 * 360).toFixed(2))
+			const S &#x3D; Number.parseInt((s * 100).toFixed(2))
+			const L: number &#x3D; Number.parseInt(l.toFixed(2))
+			return {
+				backgroundColor: &#x60;hsl(${H},${S}%,${L + 30}%)&#x60;,
+				fontColor: &#x60;hsl(${H},${S}%,${L + 10}%)&#x60;,
+				borderColor: &#x60;hsl(${H},${S}%,${L + 35}%)&#x60;,
+				contentColor: &#x60;hsl(${H},${S}%,${L + 55}%)&#x60;,
+				titleColor: &#x60;hsl(${H},${S}%,${L + 40}%)&#x60;,
+				sideMenuBG: &#x60;hsl(${H},${S}%,${L + 25}%)&#x60;
+			}
+		} else {
+			return {
+				backgroundColor: &#x60;hsl(200,100%,60%)&#x60;,
+				fontColor: &#x60;hsl(200,100%,30%)&#x60;,
+				borderColor: &#x60;hsl(200,100%,55%)&#x60;,
+				contentColor: &#x60;hsl(200,100%,75%)&#x60;,
+				titleColor: &#x60;hsl(200,100%,60%)&#x60;,
+				sideMenuBG: &#x60;hsl(200,100%,45%)&#x60;
+			}			
+		}
+	}
+
+	setThemeElements(colors: ThemeColors): void {
+		const elements: ThemeElement[] &#x3D; [
+			{
+				title: &#x27;pageBackground&#x27;,
+				backgroundColor: colors.backgroundColor,
+				elements: Array.from(
+					document.getElementsByClassName(&#x27;pageBackground&#x27;)
+				) as HTMLElement[],
+			},
+			{
+				title: &#x27;widgetContent&#x27;,
+				backgroundColor: colors.contentColor,
+				border: colors.borderColor,
+				color: colors.fontColor,
+				elements: Array.from(
+					document.getElementsByClassName(&#x27;widgetContent&#x27;)
+				) as HTMLElement[],
+			},
+			{
+				title: &#x27;widgetTitle&#x27;,
+				backgroundColor: colors.titleColor,
+				elements: Array.from(
+					document.getElementsByClassName(&#x27;widgetTitle&#x27;)
+				) as HTMLElement[],
+			},
+			{
+				title: &#x27;sideMenu&#x27;,
+				backgroundColor: colors.sideMenuBG,
+				elements: Array.from(
+					document.getElementsByClassName(&#x27;sideMenu&#x27;)
+				) as HTMLElement[],
+			},
+		]
+
+		this.setThemeColors(elements)
+	}
+	
+	setThemeColors(elements: ThemeElement[]): void {
+		elements.forEach((elementEntry: ThemeElement) &#x3D;&gt; {
+			for (let element of elementEntry.elements) {
+				if (element.classList.contains(elementEntry.title)) {
+					element.style.backgroundColor &#x3D;
+						elementEntry.backgroundColor ?
+						elementEntry.backgroundColor : &#x27;&#x27;
+					element.style.border &#x3D;
+						elementEntry.border ?
+						elementEntry.border : &#x27;&#x27;
+					element.style.color &#x3D;
+						elementEntry.color ?
+						elementEntry.color : &#x27;&#x27;
+				}
+			}
+		})
+	}
+}
+</code></pre>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'injectable';
+            var COMPODOC_CURRENT_PAGE_URL = 'TemplateService.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>
