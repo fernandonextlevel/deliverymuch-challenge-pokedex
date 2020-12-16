@@ -9,7 +9,7 @@
         height: 390px;
         width: 80px;
         margin-top: -270px;
-        transition: height 1s, margin 1s;
+        transition: height 1s, margin 1s, filter .5s;
         outline: 4px solid #000;
         filter: grayscale(100%);
 
@@ -22,6 +22,7 @@
         &:hover {
             height: 390px;
             margin-top: 0px;
+            filter: grayscale(50%);
         }
 
         .menu__item__button {

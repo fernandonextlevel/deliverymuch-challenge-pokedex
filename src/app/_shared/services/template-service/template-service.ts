@@ -67,7 +67,7 @@ export class TemplateService {
 				borderColor: `hsl(${H},${S}%,${L + 35}%)`,
 				contentColor: `hsl(${H},${S}%,${L + 55}%)`,
 				titleColor: `hsl(${H},${S}%,${L + 40}%)`,
-				sideMenuBG: `hsl(${H},${S}%,${L + 25}%)`
+				generationsMenuBG: `hsl(${H},${S}%,${L + 25}%)`
 			}
 		} else {
 			return {
@@ -76,7 +76,7 @@ export class TemplateService {
 				borderColor: `hsl(200,100%,55%)`,
 				contentColor: `hsl(200,100%,75%)`,
 				titleColor: `hsl(200,100%,60%)`,
-				sideMenuBG: `hsl(200,100%,45%)`
+				generationsMenuBG: `hsl(200,100%,45%)`
 			}			
 		}
 	}
@@ -107,10 +107,10 @@ export class TemplateService {
 				) as HTMLElement[],
 			},
 			{
-				title: 'sideMenu',
-				backgroundColor: colors.sideMenuBG,
+				title: 'generationsMenu',
+				backgroundColor: colors.generationsMenuBG,
 				elements: Array.from(
-					document.getElementsByClassName('sideMenu')
+					document.getElementsByClassName('generationsMenu')
 				) as HTMLElement[],
 			},
 		]
