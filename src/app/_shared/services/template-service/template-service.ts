@@ -24,7 +24,7 @@ export class TemplateService {
 		this.rootViewContainer = viewContainerRef
 	}
 
-	loadTemplate(template: Type<PokemapComponent>, selectedPokemonGeneration: PokemonGeneration) {
+	loadTemplate(template: Type<PokemapComponent>, selectedPokemonGeneration: PokemonGeneration | undefined) {
 		this.rootViewContainer.clear()
 		const component: ComponentRef<PokemapComponent> = this.factoryResolver
 						.resolveComponentFactory(template)

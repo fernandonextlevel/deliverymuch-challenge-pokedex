@@ -1,7 +1,7 @@
 <div
     class="pokemap"
-    *ngIf="pokemonSpeciesList"
-    [ngStyle]="{background:getPokeMapBackground(selectedPokemonGeneration.main_region.name)}"
+    *ngIf="selectedPokemonGeneration"
+    [ngStyle]="{backgroundImage:getPokeMapBackground(selectedPokemonGeneration.main_region.name ? selectedPokemonGeneration.main_region.name : '')}"
     [@FadeTrigger]="Animate"
 >
     <div class="widget pokemap__generationinfo">
@@ -41,8 +41,24 @@
             <div class="widget__content">
                 <div class="pokelist__species" *ngFor="let pokemonSpecies of pokemonSpeciesList; index as i;">
                     <p>{{pokemonSpecies.name}}</p>
-                </div>            
+                </div>
             </div>
         </div>
     </div>
 </div>
+<div
+    class="pokemap"
+    *ngIf="!selectedPokemonGeneration"
+>
+    <div class="pokemap__select__title">
+        <img
+            alt="Select a Generation Hand" class="select__title__hand"
+            src="../../../assets/images/select-generation-screen/pointing-hand.gif"
+        />
+        <img
+            alt="Select a Generation Text" class="select__title__text"
+            src="../../../assets/images/select-generation-screen/select-generation-text.png"
+        />
+    </div>
+</div>
+    

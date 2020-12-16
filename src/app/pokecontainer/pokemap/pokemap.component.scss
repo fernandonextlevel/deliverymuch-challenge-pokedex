@@ -2,6 +2,26 @@
     overflow: hidden;
     height: 100vh;
     padding: 144px 20px 20px 20px;
+    font-size: 28px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .pokemap__select__title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+
+        .select__title__hand {
+            height: 150px;
+        }
+
+        .select__title__text {
+            height: 18px;
+        }        
+    }
 
     .pokemap__generationinfo {
         height: 200px;
