@@ -12,5 +12,5 @@ export interface ThemeColors {
     borderColor: string,
     contentColor: string,
     titleColor: string,
-    sideMenuBG: string
+    generationsMenuBG: string
 }

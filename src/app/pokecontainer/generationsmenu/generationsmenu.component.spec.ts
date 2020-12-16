@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing'
 
-import { SidemenuComponent } from './sidemenu.component'
+import { GenerationsmenuComponent } from './generationsmenu.component'
 
-describe('SidemenuComponent', () => {
-  let component: SidemenuComponent
-  let fixture: ComponentFixture<SidemenuComponent>
+describe('GenerationsmenuComponent', () => {
+  let component: GenerationsmenuComponent
+  let fixture: ComponentFixture<GenerationsmenuComponent>
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ SidemenuComponent ]
+      declarations: [ GenerationsmenuComponent ]
     })
     .compileComponents()
   })
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(SidemenuComponent)
+    fixture = TestBed.createComponent(GenerationsmenuComponent)
     component = fixture.componentInstance
     fixture.detectChanges()
   })
@@ -22,4 +22,6 @@ describe('SidemenuComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy()
   })
+
+  
 })

@@ -1,8 +1,6 @@
 <div
     class="pokemap"
     *ngIf="selectedPokemonGeneration"
-    [ngStyle]="{backgroundImage:getPokeMapBackground(selectedPokemonGeneration.main_region.name ? selectedPokemonGeneration.main_region.name : '')}"
-    [@FadeTrigger]="Animate"
 >
     <div class="widget pokemap__generationinfo">
         <div class="widget__title">
@@ -61,4 +59,11 @@
         />
     </div>
 </div>
-    
+<div
+    class="pokemap__background"
+    *ngIf="selectedPokemonGeneration"
+    [ngStyle]="{backgroundImage:getPokeMapBackground(selectedPokemonGeneration.main_region.name ? selectedPokemonGeneration.main_region.name : '')}"
+    [@FadeTrigger]="Animate"
+>
+</div>
+

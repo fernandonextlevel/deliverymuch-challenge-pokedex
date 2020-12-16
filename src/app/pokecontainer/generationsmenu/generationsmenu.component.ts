@@ -5,12 +5,12 @@ import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core'
 import { PokemonGeneration, PokemonGenerationMenuItem } from '../../_shared/services/pokeapi-service/interfaces/pokemon-generation.interface'
 
 @Component({
-  selector: 'pokedex-sidemenu',
-  templateUrl: './sidemenu.component.html',
-  styleUrls: ['./sidemenu.component.scss'],
+  selector: 'pokedex-generationsmenu',
+  templateUrl: './generationsmenu.component.html',
+  styleUrls: ['./generationsmenu.component.scss'],
 })
 
-export class SidemenuComponent implements OnInit {
+export class GenerationsmenuComponent implements OnInit {
 
   @Input() pokemonGenerationMenuItems!: PokemonGenerationMenuItem[]
   @Output("loadPokemonGeneration") loadPokemonGeneration: EventEmitter<PokemonGenerationMenuItem> = new EventEmitter
