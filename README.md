@@ -32,14 +32,14 @@ Then, from the folder contaning the `tsconfig.json` file, run `compodoc -p tscon
 
 ## Folder structure
 
-/app **Contains the Angular application**
-    /_shared **Contains the Services, Components and Modules shared across multiple features**
-    /*featureName* **Contains the Module corresponding to a feature**
+/app => Contains the Angular application
+    /_shared => Contains the Services, Components and Modules shared across multiple features
+    /*featureName* => Contains the Module corresponding to a feature
 
-/assets **Contains image assets, and styles shared across multiple features**
-    /images **Contains folders named after a description of the assets contained within them**
-        /*description* **Contains image assets corresponding to the folder's name**
-    /mixins **Contains SCSS/SASS mixins**
-    /styles **Contains styles to me imported globally by `/app/styles.scss`, separated by files named after their funcionality**
+/assets => Contains image assets, and styles shared across multiple features
+    /images => Contains folders named after a description of the assets contained within them
+        /*description* => Contains image assets corresponding to the folder's name
+    /mixins => Contains SCSS/SASS mixins
+    /styles => Contains styles to me imported globally by `/app/styles.scss`, separated by files named after their funcionality
 
-/environments **Contains TS files which export environment variables to be used across multiple features (I.E.: API URLs)**
+/environments => Contains TS files which export environment variables to be used across multiple features (I.E.: API URLs)
