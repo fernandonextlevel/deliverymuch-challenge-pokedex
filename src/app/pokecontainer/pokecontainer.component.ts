@@ -59,7 +59,7 @@ export class PokecontainerComponent implements OnInit {
 		}
 	}
 
-	loadTemplate(component: Type<PokemapComponent>, selectedPokemonGeneration: PokemonGeneration): void {
+	loadTemplate(component: Type<PokemapComponent>, selectedPokemonGeneration: PokemonGeneration | undefined): void {
 		this.clearTemplate()
 		this.templateService.loadTemplate(component, selectedPokemonGeneration)
 	}
@@ -79,6 +79,7 @@ export class PokecontainerComponent implements OnInit {
 						this.pokemonGenerations.length === pokemonGenerationsResponse.count &&
 						this.pokemonGenerationMenuItems.length === pokemonGenerationsResponse.count
 					) {
+						this.loadTemplate(PokemapComponent as Type<PokemapComponent>, undefined)
 						this.isLoading = false
 					}
 				})

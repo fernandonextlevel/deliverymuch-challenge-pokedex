@@ -1,6 +1,9 @@
 # Delivery Much Challenge - Pokedex
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.4.
+## Environment Dependencies (Before You STart)
+
+Download & Install [NodeJS](https://nodejs.org/) (v13+ Recommended).
+Then Install the [Angular CLI](https://github.com/angular/angular-cli) (Version 11.0.4+ Recommended), using the Node Package Manager: `npm install -g @angular/cli`
 
 ## Development server
 

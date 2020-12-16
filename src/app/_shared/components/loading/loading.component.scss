@@ -57,10 +57,6 @@ content:"";
     animation: blink 1.25s alternate infinite;
 }
 
-.loading__text {
-    margin-top: 20px;
-}
-
 @keyframes blink {
     from { background: #eee;}
     to { background: #e74c3c; }
