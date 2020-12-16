@@ -16,10 +16,8 @@ Properties: z-index, grid-column: posX / sizeX grid-row: posY / sizeY
     background: #777;
 }
 
-pokedex-generationsmenu {
-    position: absolute;
-    z-index: 3;
-    top: 0;
-    height: 130px;
-    width: 100%;
+@media (max-width: 768px) {
+    .pokecontainer {
+        background: transparent;
+    }
 }
