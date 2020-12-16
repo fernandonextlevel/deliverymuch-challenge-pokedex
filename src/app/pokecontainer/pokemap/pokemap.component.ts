@@ -50,6 +50,6 @@ export class PokemapComponent implements OnInit {
 	}
 
 	getPokeMapBackground(name: string) {
-		return `rgba(255,255,255,0.5) url('../../../assets/images/region-backgrounds/${name}.png') center center / cover no-repeat `
+		return `rgba(255,255,255,0.5) url('../../../assets/images/region-backgrounds/${name}.png') center center / cover no-repeat`
 	}
 }
