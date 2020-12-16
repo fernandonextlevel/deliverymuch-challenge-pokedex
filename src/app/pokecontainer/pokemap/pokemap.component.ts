@@ -38,7 +38,6 @@ export class PokemapComponent implements OnInit {
 	}
 
 	ngOnInit(): void {
-		console.dir(this.selectedPokemonGeneration)
 		this.pokemonGenerationInfo = {
 			enName: this.selectedPokemonGeneration.names.filter((generationNameByLang) => {
 				return generationNameByLang.language.name === 'en'

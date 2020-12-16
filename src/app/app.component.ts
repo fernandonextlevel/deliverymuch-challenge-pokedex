@@ -1,5 +1,5 @@
 //Angular
-import { Component, Type, ViewChild, ViewContainerRef } from '@angular/core'
+import { Component } from '@angular/core'
 
 //Services
 import { TemplateService } from './_shared/services/template-service/template-service'
@@ -21,7 +21,7 @@ export class AppComponent {
 
   	}
 
-	ngOnInit() {
+	ngOnInit(): void {
 		this.setTheme()
 	}
   

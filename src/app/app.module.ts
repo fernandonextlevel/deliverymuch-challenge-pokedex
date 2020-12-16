@@ -9,6 +9,7 @@ import { AppComponent } from './app.component'
 
 //Shared
 import { ServicesModule } from './_shared/modules/services.module'
+
 //Modules
 import { PokecontainerModule } from './pokecontainer/pokecontainer.module'
 
