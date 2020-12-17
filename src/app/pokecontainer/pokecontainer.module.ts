@@ -12,23 +12,23 @@ import { PokemapComponent } from './pokemap/pokemap.component'
 import { ComponentsModule } from "../_shared/modules/components.module"
 
 @NgModule({
-  declarations:
-  [
-    PokecontainerComponent,
-    GenerationsmenuComponent,
-    PokemapComponent
-  ],
-  imports: [
-    CommonModule,
-    BrowserModule,
-    ComponentsModule
-  ],
-  exports:
-  [
-    PokecontainerComponent,
-    GenerationsmenuComponent,
-    PokemapComponent
-  ]
+	declarations:
+		[
+			PokecontainerComponent,
+			GenerationsmenuComponent,
+			PokemapComponent
+		],
+	imports: [
+		CommonModule,
+		BrowserModule,
+		ComponentsModule
+	],
+	exports:
+		[
+			PokecontainerComponent,
+			GenerationsmenuComponent,
+			PokemapComponent
+		]
 })
 
 export class PokecontainerModule { }

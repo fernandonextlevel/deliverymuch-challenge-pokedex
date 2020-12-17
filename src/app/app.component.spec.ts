@@ -6,22 +6,22 @@ import { ServicesModule } from './_shared/modules/services.module'
 
 describe('AppComponent', () => {
 
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      imports: [
-        HttpClientTestingModule,
-        ServicesModule
-      ],      
-      declarations: [
-        AppComponent,
-        PokecontainerComponent
-      ]
-    }).compileComponents()
-  })
+	beforeEach(async () => {
+		await TestBed.configureTestingModule({
+			imports: [
+				HttpClientTestingModule,
+				ServicesModule
+			],
+			declarations: [
+				AppComponent,
+				PokecontainerComponent
+			]
+		}).compileComponents()
+	})
 
-  it('should create the app', () => {
-    const fixture = TestBed.createComponent(AppComponent)
-    const app = fixture.componentInstance
-    expect(app).toBeTruthy()
-  })
+	it('should create the app', () => {
+		const fixture = TestBed.createComponent(AppComponent)
+		const app = fixture.componentInstance
+		expect(app).toBeTruthy()
+	})
 })

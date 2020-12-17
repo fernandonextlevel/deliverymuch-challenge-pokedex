@@ -14,19 +14,19 @@ import { ServicesModule } from './_shared/modules/services.module'
 import { PokecontainerModule } from './pokecontainer/pokecontainer.module'
 
 @NgModule({
-  declarations: [
-    AppComponent,
-  ],
-  imports: [
-    BrowserModule,
-    BrowserAnimationsModule,
-    HttpClientModule,
-    ServicesModule,
-    PokecontainerModule
-  ],
-  bootstrap: [
-    AppComponent
-  ]
+	declarations: [
+		AppComponent,
+	],
+	imports: [
+		BrowserModule,
+		BrowserAnimationsModule,
+		HttpClientModule,
+		ServicesModule,
+		PokecontainerModule
+	],
+	bootstrap: [
+		AppComponent
+	]
 })
 
 export class AppModule { }

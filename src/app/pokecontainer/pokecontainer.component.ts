@@ -7,7 +7,11 @@ import { TemplateService } from '../_shared/services/template-service/template-s
 import { PokeAPIService } from '../_shared/services/pokeapi-service/pokeapi-service'
 
 //Interfaces
-import { PokemonGenerationRef, PokemonGeneration, PokemonGenerationMenuItem } from '../_shared/services/pokeapi-service/interfaces/pokemon-generation.interface'
+import {
+	PokemonGenerationRef,
+	PokemonGeneration,
+	PokemonGenerationMenuItem
+} from '../_shared/services/pokeapi-service/interfaces/pokemon-generation.interface'
 
 //Components
 import { PokemapComponent } from './pokemap/pokemap.component'
@@ -42,7 +46,7 @@ export class PokecontainerComponent implements OnInit {
 	//Read View References
 	@ViewChild('content', { read: ViewContainerRef, static: true }) vCR?: ViewContainerRef
 
-	constructor (
+	constructor(
 		private templateService: TemplateService,
 		private pokeAPIService: PokeAPIService
 	) {
@@ -73,16 +77,17 @@ export class PokecontainerComponent implements OnInit {
 					url: pokemonGenerationRef.url
 				})
 				this.pokemonGenerationMenuItems.sort((a, b) => (a.name > b.name) ? 1 : -1)
-				this.pokeAPIService.getPokemonGenerationByURL(pokemonGenerationRef.url).subscribe((pokemonGeneration) => {
-					this.pokemonGenerations.push(pokemonGeneration)
-					if (
-						this.pokemonGenerations.length === pokemonGenerationsResponse.count &&
-						this.pokemonGenerationMenuItems.length === pokemonGenerationsResponse.count
-					) {
-						this.loadTemplate(PokemapComponent as Type<PokemapComponent>, undefined)
-						this.isLoading = false
-					}
-				})
+				this.pokeAPIService.getPokemonGenerationByURL(pokemonGenerationRef.url)
+					.subscribe((pokemonGeneration) => {
+						this.pokemonGenerations.push(pokemonGeneration)
+						if (
+							this.pokemonGenerations.length === pokemonGenerationsResponse.count &&
+							this.pokemonGenerationMenuItems.length === pokemonGenerationsResponse.count
+						) {
+							this.loadTemplate(PokemapComponent as Type<PokemapComponent>, undefined)
+							this.isLoading = false
+						}
+					})
 			})
 		})
 	}

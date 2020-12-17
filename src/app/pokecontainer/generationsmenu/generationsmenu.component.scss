@@ -17,6 +17,7 @@
         filter: grayscale(100%);
 
         &.selected {
+            pointer-events: none;
             outline: 4px solid #fff;
             box-shadow: 5px 5px 8px 5px rgba(0, 0, 0, 1);
             filter: grayscale(0%);
@@ -32,11 +33,7 @@
             cursor: pointer;
             height: 100%;
             width: 100%;
-            padding: 10px 0;
-
-            &:focus {
-
-            }          
+            padding: 10px 0;   
         }
     }
 }

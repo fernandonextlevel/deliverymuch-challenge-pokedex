@@ -16,7 +16,7 @@ import { PokemonGenerationsResponse, PokemonGeneration } from './interfaces/poke
 @Injectable()
 export class PokeAPIService {
 
-	constructor (
+	constructor(
 		private http: HttpService
 	) {
 
@@ -29,5 +29,5 @@ export class PokeAPIService {
 	getPokemonGenerationByURL(url: string): Observable<PokemonGeneration> {
 		return this.http.get(url)
 	}
-	
+
 }
