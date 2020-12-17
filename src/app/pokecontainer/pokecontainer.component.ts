@@ -38,6 +38,7 @@ export class PokecontainerComponent implements OnInit {
 
 	Animate: any
 	isLoading: boolean
+	pokemonGenerationsCount!: number
 	pokemonGenerationRefs!: PokemonGenerationRef[]
 	pokemonGenerations: PokemonGeneration[] = []
 	pokemonGenerationMenuItems: PokemonGenerationMenuItem[] = []
@@ -47,8 +48,8 @@ export class PokecontainerComponent implements OnInit {
 	@ViewChild('content', { read: ViewContainerRef, static: true }) vCR?: ViewContainerRef
 
 	constructor(
-		private templateService: TemplateService,
-		private pokeAPIService: PokeAPIService
+		public templateService: TemplateService,
+		public pokeAPIService: PokeAPIService
 	) {
 		this.isLoading = true
 	}
@@ -70,6 +71,7 @@ export class PokecontainerComponent implements OnInit {
 
 	fetchPokemonGenerations(): void {
 		this.pokeAPIService.getPokemonGenerations().subscribe((pokemonGenerationsResponse) => {
+			this.pokemonGenerationsCount = pokemonGenerationsResponse.count
 			this.pokemonGenerationRefs = pokemonGenerationsResponse.results
 			this.pokemonGenerationRefs.forEach((pokemonGenerationRef) => {
 				this.pokemonGenerationMenuItems.push({
@@ -77,18 +79,21 @@ export class PokecontainerComponent implements OnInit {
 					url: pokemonGenerationRef.url
 				})
 				this.pokemonGenerationMenuItems.sort((a, b) => (a.name > b.name) ? 1 : -1)
-				this.pokeAPIService.getPokemonGenerationByURL(pokemonGenerationRef.url)
-					.subscribe((pokemonGeneration) => {
-						this.pokemonGenerations.push(pokemonGeneration)
-						if (
-							this.pokemonGenerations.length === pokemonGenerationsResponse.count &&
-							this.pokemonGenerationMenuItems.length === pokemonGenerationsResponse.count
-						) {
-							this.loadTemplate(PokemapComponent as Type<PokemapComponent>, undefined)
-							this.isLoading = false
-						}
-					})
+				this.fetchPokemonGeneration(pokemonGenerationRef.url)
 			})
+		})
+	}
+
+	fetchPokemonGeneration(url: string): void {
+		this.pokeAPIService.getPokemonGenerationByURL(url)
+		.subscribe((pokemonGeneration) => {
+			this.pokemonGenerations.push(pokemonGeneration)
+			if (
+				this.pokemonGenerations.length === this.pokemonGenerationsCount
+			) {
+				this.loadTemplate(PokemapComponent as Type<PokemapComponent>, undefined)
+				this.isLoading = false
+			}
 		})
 	}
 
