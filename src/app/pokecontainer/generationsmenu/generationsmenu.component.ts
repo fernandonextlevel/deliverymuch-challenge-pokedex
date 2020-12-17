@@ -1,5 +1,5 @@
 //Angular
-import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core'
+import { Component, Input, Output, EventEmitter } from '@angular/core'
 
 //Interfaces
 import { PokemonGenerationMenuItem } from '../../_shared/services/pokeapi-service/interfaces/pokemon-generation.interface'
@@ -10,7 +10,7 @@ import { PokemonGenerationMenuItem } from '../../_shared/services/pokeapi-servic
 	styleUrls: ['./generationsmenu.component.scss'],
 })
 
-export class GenerationsmenuComponent implements OnInit {
+export class GenerationsmenuComponent {
 
 	@Input() pokemonGenerationMenuItems!: PokemonGenerationMenuItem[]
 	@Output("loadPokemonGeneration") loadPokemonGeneration: EventEmitter<PokemonGenerationMenuItem> = new EventEmitter
@@ -19,10 +19,6 @@ export class GenerationsmenuComponent implements OnInit {
 	constructor(
 
 	) {
-
-	}
-
-	ngOnInit(): void {
 
 	}
 
