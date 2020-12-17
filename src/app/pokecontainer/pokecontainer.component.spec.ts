@@ -42,22 +42,14 @@ describe('PokecontainerComponent', () => {
 		expect(component).toBeTruthy()
 	})
 
-	it('should call the API to fetch the Pokémon Generation Refs, and then fetch a Pokémon Generation Data', waitForAsync(() => {
+	it('should call the API to fetch the Pokémon Generation Refs, and then fetch a Pokémon Generation Data to load a Template with', waitForAsync(() => {
 		const pokemonGenerationRefs: PokemonGenerationRef[] = mockedPokemonGenerationsResponse.results
 		const pokemonGenerationData: PokemonGeneration = mockedPokemonGenerationResponse
 		spyOn(component.pokeAPIService, 'getPokemonGenerations').and.returnValue(of(mockedPokemonGenerationsResponse))
 		spyOn(component.pokeAPIService, 'getPokemonGenerationByURL').and.returnValue(of(pokemonGenerationData))
 		component.fetchPokemonGenerations()
+		component.loadPokemonGeneration(pokemonGenerationRefs[0])		
 		fixture.detectChanges()
 		expect(component.pokemonGenerationRefs).toEqual(pokemonGenerationRefs)
 	}))
-
-	it('should load the Template of a Pokémon Generation', () => {
-		component.loadPokemonGeneration(
-			{
-				name: "generation-i",
-				url: "https://pokeapi.co/api/v2/generation/1/"
-			}
-		)
-	})
 })
