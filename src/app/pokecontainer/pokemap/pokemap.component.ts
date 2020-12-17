@@ -44,11 +44,16 @@ export class PokemapComponent implements OnInit {
 				enName: this.selectedPokemonGeneration.names.filter((generationNameByLang) => {
 					return generationNameByLang.language.name === 'en'
 				})[0].name,
-				mainRegionName: this.selectedPokemonGeneration.main_region.name,
-				pokemonsAmount: this.selectedPokemonGeneration.pokemon_species.length
+				mainRegionName: this.selectedPokemonGeneration
+					.main_region.name,
+				pokemonsAmount: this.selectedPokemonGeneration
+					.pokemon_species.length
 			}
-			this.pokemonVersionList = this.selectedPokemonGeneration.version_groups;
-			this.pokemonSpeciesList = this.selectedPokemonGeneration.pokemon_species.sort((a, b) => (a.name > b.name) ? 1 : -1);
+			this.pokemonVersionList = this.selectedPokemonGeneration
+				.version_groups
+			this.pokemonSpeciesList = this.selectedPokemonGeneration
+				.pokemon_species
+				.sort((a, b) => (a.name > b.name) ? 1 : -1)
 		}
 	}
 

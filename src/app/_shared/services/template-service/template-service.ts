@@ -12,8 +12,8 @@ export class TemplateService {
 
 	rootViewContainer: any
 
-	constructor (
-		@Inject (ComponentFactoryResolver)
+	constructor(
+		@Inject(ComponentFactoryResolver)
 		public factoryResolver: ComponentFactoryResolver
 	) {
 
@@ -26,8 +26,8 @@ export class TemplateService {
 	loadTemplate(template: Type<PokemapComponent>, selectedPokemonGeneration: PokemonGeneration | undefined) {
 		this.rootViewContainer.clear()
 		const component: ComponentRef<PokemapComponent> = this.factoryResolver
-						.resolveComponentFactory(template)
-						.create(this.rootViewContainer.parentInjector)
+			.resolveComponentFactory(template)
+			.create(this.rootViewContainer.parentInjector)
 		component.instance.selectedPokemonGeneration = selectedPokemonGeneration
 		this.rootViewContainer.insert(component.hostView)
 		window.scrollTo(0, 0)

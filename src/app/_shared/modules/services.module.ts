@@ -6,11 +6,11 @@ import { TemplateService } from '../services/template-service/template-service'
 import { PokeAPIService } from '../services/pokeapi-service/pokeapi-service'
 
 @NgModule({
-  providers:
-  [
-    TemplateService,
-    PokeAPIService
-  ]
+	providers:
+		[
+			TemplateService,
+			PokeAPIService
+		]
 })
 
 export class ServicesModule { }

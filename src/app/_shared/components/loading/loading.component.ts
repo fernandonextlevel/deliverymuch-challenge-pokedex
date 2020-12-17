@@ -1,20 +1,10 @@
 //Angular
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
-  selector: 'pokedex-loading',
-  templateUrl: './loading.component.html',
-  styleUrls: ['./loading.component.scss'],
+	selector: 'pokedex-loading',
+	templateUrl: './loading.component.html',
+	styleUrls: ['./loading.component.scss']
 })
-export class LoadingComponent implements OnInit {
 
-  constructor (
-
-  ) {
-
-  }
-
-  ngOnInit(): void {
-  }
-
-}
+export class LoadingComponent { }
